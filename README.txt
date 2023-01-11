@@ -1,3 +1,14 @@
+For raspberry pi 4
+==================
+1. Install the kernel headers
+   sudo apt-get install raspberrypi-kernel-headers
+2. Compile the driver
+   make
+3. Install the driver
+   sudo insmod ./xr_usb_serial_common.ko
+4. Plug the device into the USB host.  You should see up to four devices created,
+   typically /dev/ttyXRUSB[0-3].
+
 Exar USB Serial Driver
 ======================
 Version 1C  2017/1/11
